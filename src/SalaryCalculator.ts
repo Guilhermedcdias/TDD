@@ -19,7 +19,7 @@ export class CalculadoraSalario {
     switch (cargo) {
       case Cargo.DESENVOLVEDOR:
         return salarioBase >= 3000 ? salarioBase * 0.8 : salarioBase * 0.9;
-      case Cargo.DBA:
+      case Cargo.DBA: return salarioBase >= 2000 ? salarioBase * 0.75 : salarioBase * 0.85;
       case Cargo.TESTADOR:
         return salarioBase >= 2000 ? salarioBase * 0.75 : salarioBase * 0.85;
       case Cargo.GERENTE:
